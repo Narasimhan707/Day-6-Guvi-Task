@@ -1,0 +1,174 @@
+fix.html - 1
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    alert("I'm JavaScript!");
+  </script>
+  <!-- Whats the error in this ? -->
+</body>
+
+</html>
+fix.html - 2
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+scripts.js
+<scrip>
+alert("I'm invoked!");
+</script>
+explain.html
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+
+<script>
+alert("I'm JavaScript!");
+alert('Hello'); // added semicolon
+alert(`Wor
+ld`);
+alert(3 +
+1 +
+2); // works fine
+</script>
+fix.html - 3
+
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+<script>
+let admin = 9, fname = 10.5;
+fname = "Guvi";
+let lname = "geek"; // added missing let keyword
+admin = fname + " " + lname; // added space between first and last name
+alert(admin); // "Guvi geek"
+</script>
+
+fix.html - 4
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+<script>
+
+let faname = 10.5;
+faname = "Guvi";
+let laname = "geek";
+let name = faname + " " + laname; // added space between first and last name
+alert(`hello ${name}`); // used template literals
+</script>
+fix.html - 5
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+
+<script>
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(Number(a) + Number(b)); // convert input strings to numbers using Number() function
+</script>
+fix.html - 6
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+
+<script>
+var c = "2" > "12";
+//Don't touch below this
+if (c) {
+console.log("Diffused"); // changed console.log message to "Diffused"
+} else {
+console.log("Code is Blasted") // changed console.log message to "Code is Blasted"
+}
+</script>
+fix.html - 7
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+script.js
+
+<script>
+let c = prompt("Enter a number?");
+//Don't modify any code below this
+if (c || c === 0) { // added a check for 0
+console.log( 'Success' );
+}
+else
+{
+console.log( "Enter a valid input" ); // changed console.log message to "Enter a valid input"
+}
+</script>
+<!-- fix.html - 8 -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- script.js -->
+<script>
+let value = prompt('How many runs you scored in this ball');
+if (value === "4") { // changed comparison to string
+console.log("You hit a Four");
+} else if (value === "6") { // changed comparison to string
+console.log("You hit a Six");
+} else {
+console.log("I couldn't figure out");
+}
+</script>
+
+
